@@ -1,0 +1,22 @@
+info:
+  name: Raise Event EstimateReceived
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/HailClaimWorkflow_HttpRaiseEstimateReceived?instanceId={{instanceId}}&estimate=12000"
+  params:
+    - name: instanceId
+      value: "{{instanceId}}"
+      type: query
+    - name: estimate
+      value: "12000"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,8 @@
+name: Azure Personal
+variables:
+  - name: baseUrl
+    value: https://func-demodurablefunc-itn-001.azurewebsites.net
+  - secret: true
+    name: code
+  - name: instanceId
+    value: 15334c7f03a7454995f5fce558085578

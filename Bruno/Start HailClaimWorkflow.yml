@@ -1,0 +1,19 @@
+info:
+  name: Start HailClaimWorkflow
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/HailClaimWorkflow_HttpStart?claimId=AAA-123"
+  params:
+    - name: claimId
+      value: AAA-123
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

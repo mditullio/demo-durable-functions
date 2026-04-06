@@ -1,0 +1,22 @@
+info:
+  name: Rewind DurableTask
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/runtime/webhooks/durabletask/instances/{{instanceId}}/restart?reason=Retry&code={{code}}"
+  params:
+    - name: reason
+      value: Retry
+      type: query
+    - name: code
+      value: "{{code}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

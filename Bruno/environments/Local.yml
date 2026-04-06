@@ -1,0 +1,8 @@
+name: Local
+variables:
+  - secret: true
+    name: code
+  - name: baseUrl
+    value: http://localhost:7056
+  - name: instanceId
+    value: 15334c7f03a7454995f5fce558085578
